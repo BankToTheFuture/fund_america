@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.fundamerica.com/api/entities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 17 Sep 2019 06:53:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 422 Unprocessable Entity
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - d7163409-b794-421d-ab0c-611009442340
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      X-Runtime:
+      - '0.021746'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: UTF-8
+      string: '{"entity":{"city":["can''t be blank"],"postal_code":["can''t be blank"],"region":["must
+        be a valid US postal abbreviation (e.g. \"NY\")"],"street_address_1":["can''t
+        be blank"],"email":["is invalid"],"name":["can''t be blank"],"phone":["can''t
+        be blank"]}}'
+    http_version: 
+  recorded_at: Tue, 17 Sep 2019 06:53:56 GMT
+recorded_with: VCR 4.0.0

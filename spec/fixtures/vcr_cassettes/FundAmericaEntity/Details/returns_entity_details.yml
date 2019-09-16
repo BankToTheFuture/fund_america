@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.fundamerica.com/api/entities/Yl5VNP19TuyK3sJHsHDNIg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 17 Sep 2019 06:53:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - cf613e1d-6a8d-4a24-8cae-98eab79249a8
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"f67b1f33eca7e83ed5f8c455ce1cf71d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.030247'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvYmplY3QiOiJlbnRpdHkiLCJpZCI6IllsNVZOUDE5VHV5SzNzSkhzSEROSWciLCJ1cmwiOiJodHRwczovL3NhbmRib3guZnVuZGFtZXJpY2EuY29tL2FwaS9lbnRpdGllcy9ZbDVWTlAxOVR1eUszc0pIc0hETklnIiwiYnJva2VyX2RlYWxlcl9jdXN0b21lciI6ZmFsc2UsImJ1aWxkaW5nX25hbWUiOm51bGwsImNyZWF0ZWRfYXQiOiIyMDE5LTA4LTA1VDA1OjI0OjEwLjE4OVoiLCJjaXR5IjoiR2xpd2ljZSIsImNvbnRhY3RfbmFtZSI6IlBhamEgQm9uZ28iLCJjb3VudHJ5IjoiUEwiLCJkYXRlX29mX2JpcnRoIjpudWxsLCJlbWFpbCI6InAuc2xvd2lrKzIwMEBleGxhYnMucGwiLCJuYW1lIjoiQW5kcmV3IEtvc3RlY2t5IiwicGhvbmUiOiIxICg3NDgpIDM0OS0zMzQzIiwicGxhdGZvcm1faW52ZXN0b3JfdXJsIjoiaHR0cHM6Ly9zYW5kYm94LmZ1bmRhbWVyaWNhLmNvbS9hcGkvZW50aXRpZXMvWWw1Vk5QMTlUdXlLM3NKSHNIRE5JZy9wbGF0Zm9ybV9pbnZlc3RvciIsInBvc3RhbF9jb2RlIjoiNDQtMTAwIiwicmVnaW9uIjoiU2lsZXNpYSIsInJlZ2lvbl9mb3JtZWRfaW4iOm51bGwsInN0cmVldF9hZGRyZXNzXzEiOiJEb2xueWNoIFdhxYLDs3ciLCJzdHJlZXRfYWRkcmVzc18yIjoiMTNhLzUiLCJzdHJlZXRfbmFtZSI6bnVsbCwic3RyZWV0X251bWJlciI6bnVsbCwic3RyZWV0X3R5cGUiOm51bGwsInRheF9pZF9udW1iZXIiOiI1MzUzNTM1MyIsInR5cGUiOiJjb21wYW55IiwidW5pdF9udW1iZXIiOm51bGwsInVwZGF0ZWRfYXQiOiIyMDE5LTA4LTA1VDA1OjI0OjEwLjE4OVoifQ==
+    http_version: 
+  recorded_at: Tue, 17 Sep 2019 06:53:55 GMT
+recorded_with: VCR 4.0.0
