@@ -120,7 +120,7 @@ module FundAmerica
       end
 
       # https://apps.fundamerica.com/api/entities/:id/platform_investor (GET)
-      # Usage: FundAmerica::Entity.platform_investor 
+      # Usage: FundAmerica::Entity.platform_investor
       # Output: Returns entity specific platform_investor information
       # Note: FA platform investor information will also be included with investor information
       def platform_investor(entity_id )
