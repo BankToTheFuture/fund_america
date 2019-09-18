@@ -1,0 +1,210 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.fundamerica.com/api/entities
+    body:
+      encoding: UTF-8
+      string: city=Las%20Vegas&country=US&date_of_birth=1980-01-01&email=investor1568792241%40test.com&name=Investor%201568792241&phone=17025551212&postal_code=89123&region=NV&street_address_1=555%20Some%20St&tax_id_number=000000000
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Sep 2019 07:37:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - a322a595-30dc-43a7-a374-ea8b5be75a38
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"be9a788d683b8140ee53d92147a4fec0"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.033586'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"entity","id":"Sxdl4W6dRF-fdQq40Wf-oQ","url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ","broker_dealer_customer":false,"building_name":null,"created_at":"2019-09-18T07:37:22.100Z","city":"Las
+        Vegas","contact_name":null,"country":"US","date_of_birth":"1980-01-01","email":"investor1568792241@test.com","name":"Investor
+        1568792241","phone":"17025551212","platform_investor_url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ/platform_investor","postal_code":"89123","region":"NV","region_formed_in":null,"street_address_1":"555
+        Some St","street_address_2":null,"street_name":null,"street_number":null,"street_type":null,"tax_id_number":"000000000","type":"person","unit_number":null,"updated_at":"2019-09-18T07:37:22.100Z"}'
+    http_version: 
+  recorded_at: Wed, 18 Sep 2019 07:37:22 GMT
+- request:
+    method: patch
+    uri: https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ
+    body:
+      encoding: UTF-8
+      string: city=New%20York
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Sep 2019 07:37:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 25debf31-ed4d-44bd-a8a0-5e4f2f03562d
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"5ed827b705cba69f1b5348a90d3bcbe2"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.048394'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"entity","id":"Sxdl4W6dRF-fdQq40Wf-oQ","url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ","broker_dealer_customer":false,"building_name":null,"created_at":"2019-09-18T07:37:22.100Z","city":"New
+        York","contact_name":null,"country":"US","date_of_birth":"1980-01-01","email":"investor1568792241@test.com","name":"Investor
+        1568792241","phone":"17025551212","platform_investor_url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ/platform_investor","postal_code":"89123","region":"NV","region_formed_in":null,"street_address_1":"555
+        Some St","street_address_2":null,"street_name":null,"street_number":null,"street_type":null,"tax_id_number":"000000000","type":"person","unit_number":null,"updated_at":"2019-09-18T07:37:22.100Z"}'
+    http_version: 
+  recorded_at: Wed, 18 Sep 2019 07:37:22 GMT
+- request:
+    method: get
+    uri: https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Sep 2019 07:37:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 722a642d-ea0c-4f94-8f34-68af0621b1a1
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"7b1c90a5149d5edd8e9923b667567d1c"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.023637'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"entity","id":"Sxdl4W6dRF-fdQq40Wf-oQ","url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ","broker_dealer_customer":false,"building_name":null,"created_at":"2019-09-18T07:37:22.100Z","city":"New
+        York","contact_name":null,"country":"US","date_of_birth":"1980-01-01","email":"investor1568792241@test.com","name":"Investor
+        1568792241","phone":"17025551212","platform_investor_url":"https://sandbox.fundamerica.com/api/entities/Sxdl4W6dRF-fdQq40Wf-oQ/platform_investor","postal_code":"89123","region":"NV","region_formed_in":null,"street_address_1":"555
+        Some St","street_address_2":null,"street_name":null,"street_number":null,"street_type":null,"tax_id_number":"000000000","type":"person","unit_number":null,"updated_at":"2019-09-18T07:37:22.689Z"}'
+    http_version: 
+  recorded_at: Wed, 18 Sep 2019 07:37:23 GMT
+recorded_with: VCR 4.0.0

@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: patch
-    uri: https://sandbox.fundamerica.com/api/entities/abc
+    method: post
+    uri: https://sandbox.fundamerica.com/api/investors
     body:
       encoding: UTF-8
-      string: city=New%20York
+      string: primary_entity_id=xxx
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -17,13 +17,13 @@ http_interactions:
       - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 422
+      message: Unprocessable Entity
     headers:
       Server:
       - nginx
       Date:
-      - Wed, 18 Sep 2019 07:42:42 GMT
+      - Wed, 18 Sep 2019 07:43:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,7 +31,9 @@ http_interactions:
       Connection:
       - close
       Status:
-      - 404 Not Found
+      - 422 Unprocessable Entity
+      Cache-Control:
+      - no-cache
       Access-Control-Allow-Origin:
       - "*"
       Strict-Transport-Security:
@@ -43,14 +45,14 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Request-Id:
-      - 288ca3ea-4d03-41be-8853-ce4045bf105b
+      - 97f54555-ecd8-4ab7-95fb-79b315cb2436
       Access-Control-Allow-Headers:
       - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
         X-Requested-With
       Access-Control-Allow-Methods:
       - GET, POST, PATCH, DELETE
       X-Runtime:
-      - '0.019616'
+      - '0.017857'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -58,8 +60,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 5.1.8
     body:
-      encoding: ASCII-8BIT
-      string: '{"status_message":"Resource not found."}'
+      encoding: UTF-8
+      string: '{"investor":{"primary_entity_id":["is not a valid resource ID"],"type":["is
+        not included in the list"]}}'
     http_version: 
-  recorded_at: Wed, 18 Sep 2019 07:42:42 GMT
+  recorded_at: Wed, 18 Sep 2019 07:43:24 GMT
 recorded_with: VCR 4.0.0

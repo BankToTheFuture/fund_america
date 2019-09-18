@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: patch
-    uri: https://sandbox.fundamerica.com/api/entities/abc
+    uri: https://sandbox.fundamerica.com/api/investors/abc
     body:
       encoding: UTF-8
-      string: city=New%20York
+      string: accreditation_type=individual_net_worth&accredited=true
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 18 Sep 2019 07:42:42 GMT
+      - Wed, 18 Sep 2019 07:43:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,14 +43,14 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Request-Id:
-      - 288ca3ea-4d03-41be-8853-ce4045bf105b
+      - 9e5c379c-49fd-4a04-9532-0efca692d982
       Access-Control-Allow-Headers:
       - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
         X-Requested-With
       Access-Control-Allow-Methods:
       - GET, POST, PATCH, DELETE
       X-Runtime:
-      - '0.019616'
+      - '0.019833'
       X-Frame-Options:
       - SAMEORIGIN
       X-Content-Type-Options:
@@ -61,5 +61,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"status_message":"Resource not found."}'
     http_version: 
-  recorded_at: Wed, 18 Sep 2019 07:42:42 GMT
+  recorded_at: Wed, 18 Sep 2019 07:43:29 GMT
 recorded_with: VCR 4.0.0
