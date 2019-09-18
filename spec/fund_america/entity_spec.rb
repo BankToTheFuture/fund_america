@@ -72,15 +72,22 @@ describe FundAmerica::Entity, :vcr do
   end
 
   context '#update' do
-    let(:entity) { create_entity }
     let(:params) { { city: 'New York' } }
     let(:response) { described_class.update(entity['id'], params) }
 
     context 'when entity exists and params are valid' do
-      # TODO unable to test in sandbox mode
-      xit 'returns updated entity' do
+      let(:entity) { create_entity }
+
+      it 'returns updated entity' do
         expect(response['id']).to eq entity['id']
         expect(response['city']).to eq params[:city]
+      end
+
+      it 'updates entity' do
+        expect(entity['city']).not_to eq params[:city]
+        response
+        reloaded_entity = described_class.details(entity['id'])
+        expect(reloaded_entity['city']).to eq params[:city]
       end
     end
 

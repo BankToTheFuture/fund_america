@@ -3,6 +3,11 @@ module FabricatorsHelper
     FundAmerica::Investment.create(investment_params)
   end
 
+  def create_investor
+    entity = create_entity
+    FundAmerica::Investor.create(primary_entity_id: entity['id'])
+  end
+
   def create_entity
     FundAmerica::Entity.create(entity_params)
   end
