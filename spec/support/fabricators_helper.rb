@@ -12,6 +12,10 @@ module FabricatorsHelper
     FundAmerica::Entity.create(entity_params)
   end
 
+  def create_entity_document(entity = nil)
+    FundAmerica::EntityDocument.create(entity_document_params(entity))
+  end
+
   def investment_params
     {
       amount: '5000',
@@ -34,6 +38,16 @@ module FabricatorsHelper
       region: 'NV',
       street_address_1: '555 Some St',
       tax_id_number: '000000000'
+    }
+  end
+
+  def entity_document_params(entity = nil)
+    {
+      content_type: 'application/pdf',
+      entity_id: (entity || create_entity)['id'],
+      purpose: 'kyc',
+      title: 'Important document',
+      file: File.open(File.join(File.dirname(__FILE__), 'example_document.pdf'))
     }
   end
 
