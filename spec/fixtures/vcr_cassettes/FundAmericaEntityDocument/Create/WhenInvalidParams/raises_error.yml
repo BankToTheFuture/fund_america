@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.fundamerica.com/api/entity_documents
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 18 Sep 2019 13:40:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 422 Unprocessable Entity
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - a28e728d-be75-4e96-aa04-c863e12bd65f
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      X-Runtime:
+      - '0.020513'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: UTF-8
+      base64_string: |
+        eyJlbnRpdHlfZG9jdW1lbnQiOnsiZW50aXR5X2lkIjpbImlzIG5vdCBhIHZh
+        bGlkIHJlc291cmNlIElEIl0sImNvbnRlbnRfdHlwZSI6WyJjYW4ndCBiZSBi
+        bGFuayJdLCJmaWxlIjpbImNhbid0IGJlIGJsYW5rIl0sInB1cnBvc2UiOlsi
+        aXMgbm90IGluY2x1ZGVkIGluIHRoZSBsaXN0Il0sInRpdGxlIjpbImNhbid0
+        IGJlIGJsYW5rIl19fQ==
+    http_version: 
+  recorded_at: Wed, 18 Sep 2019 13:40:42 GMT
+recorded_with: VCR 4.0.0
