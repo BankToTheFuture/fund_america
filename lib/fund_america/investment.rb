@@ -19,10 +19,8 @@ module FundAmerica
       # End point: https://apps.fundamerica.com/api/investments/:id (PATCH)
       # Usage: FundAmerica::Investment.update(investment_id, options)
       # Output: Updates an investment
-      # In sandbox mode status can be updated to received using test_mode url
       def update(investment_id, options)
-        end_point_url = FundAmerica.base_uri + "#{FundAmerica.mode == 'sandbox' ? 'test_mode/' : ''}" + "investments/#{investment_id}"
-        API::request(:patch, end_point_url, options)
+        API::request(:patch, "investments/#{investment_id}", options)
       end
 
       # End point: https://apps.fundamerica.com/api/investments/:id (GET)
