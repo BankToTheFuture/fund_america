@@ -1,0 +1,237 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.fundamerica.com/api/investments
+    body:
+      encoding: UTF-8
+      string: amount=5000&entity[city]=Las%20Vegas&entity[country]=US&entity[date_of_birth]=1980-01-01&entity[email]=investor1568881632%40test.com&entity[name]=Investor%201568881632&entity[phone]=17025551212&entity[postal_code]=89123&entity[region]=NV&entity[street_address_1]=555%20Some%20St&entity[tax_id_number]=000000000&equity_share_count=10&offering_id=AflShkTFRm6neTWJe6UXcA&payment_method=wire
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 19 Sep 2019 08:27:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 2305d2ca-9e50-4f23-ab63-7862b0c312d1
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"0719b51a4e568401a0b9ab07ed123160"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.659440'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"investment","id":"sLDKnGd5TraLXorFcAmKEg","url":"https://sandbox.fundamerica.com/api/investments/sLDKnGd5TraLXorFcAmKEg","offering_url":"https://sandbox.fundamerica.com/api/offerings/AflShkTFRm6neTWJe6UXcA","administration_fee":"0.0","aml_check_investor":true,"aml_exception":false,"amount":"5000.0","amount_in_escrow":"0.0","amount_received":"0.0","amount_refunded":"0.0","background_check_url":null,"bank_reference":"FARJD9","brokerage_fee":"0.0","ceremonial_certificate_url":null,"check_mailing_address":"Prime
+        Trust\n10890 S Eastern Ave\nSuite 114\nHenderson, NV 89502","check_mailing_instructions":"Please
+        make checks payable to \"Prime Trust as Escrow Agent for Offering 1565081501\"
+        and include a note with your name, phone number, email address, and investor
+        ID (FARJD9) in case we have any questions.","cleared":false,"clearing_failures":["funds_not_cleared"],"commission_fee":"0.0","concession_fee":"0.0","confirm_accreditation":false,"created_at":"2019-09-19T08:27:13.296Z","data":{},"debt_face_value":null,"debt_par_value":"10.0","disbursed_at":null,"entity_url":"https://sandbox.fundamerica.com/api/entities/hI3ZrcR4RpOYI2tpIiU4lw","equity_share_count":"10.0","equity_share_price":"500.0","face_value":null,"financial_adviser_name":null,"financial_advisor_name":null,"funds_disbursable":0,"funds_transfer_method":"wire","in_escrow_at":null,"investor_url":"https://sandbox.fundamerica.com/api/investors/gHfy_zmRRnKTHJcewIu0Qw","par_value":"10.0","payment_method":"wire","payment_reference":"FARJD9","promo_code":null,"referrer":null,"refunded_at":null,"remittance_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"},"review_trade":false,"status":"not_received","subscription_agreement_url":null,"trade_review_status":null,"trade_review_url":null,"unit_count":"10.0","updated_at":"2019-09-19T08:27:13.296Z","wire_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"}}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 08:27:13 GMT
+- request:
+    method: patch
+    uri: https://sandbox.fundamerica.com/api/investments/sLDKnGd5TraLXorFcAmKEg
+    body:
+      encoding: UTF-8
+      string: equity_share_count=5.0
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 19 Sep 2019 08:27:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 3fcb7871-16b4-4179-8719-5deb39e9beda
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"558055316831946e1ead1d833623d76c"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.415105'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"investment","id":"sLDKnGd5TraLXorFcAmKEg","url":"https://sandbox.fundamerica.com/api/investments/sLDKnGd5TraLXorFcAmKEg","offering_url":"https://sandbox.fundamerica.com/api/offerings/AflShkTFRm6neTWJe6UXcA","administration_fee":"0.0","aml_check_investor":true,"aml_exception":false,"amount":"5000.0","amount_in_escrow":"0.0","amount_received":"0.0","amount_refunded":"0.0","background_check_url":null,"bank_reference":"FARJD9","brokerage_fee":"0.0","ceremonial_certificate_url":null,"check_mailing_address":"Prime
+        Trust\n10890 S Eastern Ave\nSuite 114\nHenderson, NV 89502","check_mailing_instructions":"Please
+        make checks payable to \"Prime Trust as Escrow Agent for Offering 1565081501\"
+        and include a note with your name, phone number, email address, and investor
+        ID (FARJD9) in case we have any questions.","cleared":false,"clearing_failures":["funds_not_cleared"],"commission_fee":"0.0","concession_fee":"0.0","confirm_accreditation":false,"created_at":"2019-09-19T08:27:13.296Z","data":{},"debt_face_value":null,"debt_par_value":"5.0","disbursed_at":null,"entity_url":"https://sandbox.fundamerica.com/api/entities/hI3ZrcR4RpOYI2tpIiU4lw","equity_share_count":"5.0","equity_share_price":"1000.0","face_value":null,"financial_adviser_name":null,"financial_advisor_name":null,"funds_disbursable":0,"funds_transfer_method":"wire","in_escrow_at":null,"investor_url":"https://sandbox.fundamerica.com/api/investors/gHfy_zmRRnKTHJcewIu0Qw","par_value":"5.0","payment_method":"wire","payment_reference":"FARJD9","promo_code":null,"referrer":null,"refunded_at":null,"remittance_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"},"review_trade":false,"status":"not_received","subscription_agreement_url":null,"trade_review_status":null,"trade_review_url":null,"unit_count":"5.0","updated_at":"2019-09-19T08:27:13.296Z","wire_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"}}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 08:27:15 GMT
+- request:
+    method: get
+    uri: https://sandbox.fundamerica.com/api/investments/sLDKnGd5TraLXorFcAmKEg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 19 Sep 2019 08:27:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 4575bac6-f95f-4d05-9179-4b1dd3b515c6
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"c33f96e2fc505ce36965720f73c23c72"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.055574'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"investment","id":"sLDKnGd5TraLXorFcAmKEg","url":"https://sandbox.fundamerica.com/api/investments/sLDKnGd5TraLXorFcAmKEg","offering_url":"https://sandbox.fundamerica.com/api/offerings/AflShkTFRm6neTWJe6UXcA","administration_fee":"0.0","aml_check_investor":true,"aml_exception":false,"amount":"5000.0","amount_in_escrow":"0.0","amount_received":"0.0","amount_refunded":"0.0","background_check_url":null,"bank_reference":"FARJD9","brokerage_fee":"0.0","ceremonial_certificate_url":null,"check_mailing_address":"Prime
+        Trust\n10890 S Eastern Ave\nSuite 114\nHenderson, NV 89502","check_mailing_instructions":"Please
+        make checks payable to \"Prime Trust as Escrow Agent for Offering 1565081501\"
+        and include a note with your name, phone number, email address, and investor
+        ID (FARJD9) in case we have any questions.","cleared":false,"clearing_failures":["funds_not_cleared"],"commission_fee":"0.0","concession_fee":"0.0","confirm_accreditation":false,"created_at":"2019-09-19T08:27:13.296Z","data":{},"debt_face_value":null,"debt_par_value":"5.0","disbursed_at":null,"entity_url":"https://sandbox.fundamerica.com/api/entities/hI3ZrcR4RpOYI2tpIiU4lw","equity_share_count":"5.0","equity_share_price":"1000.0","face_value":null,"financial_adviser_name":null,"financial_advisor_name":null,"funds_disbursable":0,"funds_transfer_method":"wire","in_escrow_at":null,"investor_url":"https://sandbox.fundamerica.com/api/investors/gHfy_zmRRnKTHJcewIu0Qw","par_value":"5.0","payment_method":"wire","payment_reference":"FARJD9","promo_code":null,"referrer":null,"refunded_at":null,"remittance_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"},"review_trade":false,"status":"not_received","subscription_agreement_url":null,"trade_review_status":null,"trade_review_url":null,"unit_count":"5.0","updated_at":"2019-09-19T08:27:14.642Z","wire_details":{"bank_address":"One
+        East Washington Street\nPhoenix AZ 85004","bank_name":"Western Alliance Bank","bank_phone":"1
+        (602) 629-1776","routing_number":"122105980","swift_code":"BBFXUS6S","account_number":"00015738912","beneficiary_name":"Prime
+        Trust as Escrow Agent for Offering 1565081501","beneficiary_address":"10890
+        S Eastern Ave\nSuite 114\nHenderson, NV 89502","reference":"FARJD9"}}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 08:27:15 GMT
+recorded_with: VCR 4.0.0
