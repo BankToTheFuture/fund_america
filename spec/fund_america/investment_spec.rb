@@ -34,7 +34,7 @@ describe FundAmerica::Investment, :vcr do
   end
 
   context '#update' do
-    let(:params) { { equity_share_count: '5.0' } }
+    let(:params) { { status: 'received' } }
     let(:response) { described_class.update(investment['id'], params) }
 
     context 'when investment exists and params are valid' do
@@ -42,14 +42,14 @@ describe FundAmerica::Investment, :vcr do
 
       it 'returns updated investment' do
         expect(response['id']).to eq investment['id']
-        expect(response['equity_share_count']).to eq params[:equity_share_count]
+        expect(response['status']).to eq params[:status]
       end
 
       it 'updates investment' do
-        expect(investment['equity_share_count']).not_to eq params[:equity_share_count]
+        expect(investment['status']).not_to eq params[:status]
         response
         reloaded_investment = described_class.details(investment['id'])
-        expect(reloaded_investment['equity_share_count']).to eq params[:equity_share_count]
+        expect(reloaded_investment['status']).to eq params[:status]
       end
     end
   end
