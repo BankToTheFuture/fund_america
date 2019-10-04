@@ -20,7 +20,9 @@ module FundAmerica
       # Usage: FundAmerica::Investment.update(investment_id, options)
       # Output: Updates an investment
       def update(investment_id, options)
-        API::request(:patch, "investments/#{investment_id}", options)
+        base_uri = FundAmerica.mode == 'sandbox' ? "#{FundAmerica.base_uri}test_mode/" : ''
+        end_point_url = base_uri + "investments/#{investment_id}"
+        API::request(:patch, end_point_url, options)
       end
 
       # End point: https://apps.fundamerica.com/api/investments/:id (GET)
