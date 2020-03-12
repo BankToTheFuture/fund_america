@@ -117,4 +117,17 @@ describe FundAmerica::Investment, :vcr do
       expect(response['resources']).to be_empty
     end
   end
+
+  # There is manually updated cassette for this test
+  context '#investment_payments' do
+    let(:investment_id) { 'uP0DmH10Rdiw6V6pUNlbzA' }
+    let(:response) { described_class.crypto_wallets(investment_id) }
+
+    it 'returns crypto wallets list' do
+      expect(response['object']).to eq 'resource_list'
+      expect(response['total_resources']).to be >= 1
+      expect(response['resources'].first['object']).to eq 'crypto_wallet'
+      expect(response['resources'].first['address']).to eq '32bZhdXJmWV1fbfd2HS6SNnpA1fqawcfC7'
+    end
+  end
 end
