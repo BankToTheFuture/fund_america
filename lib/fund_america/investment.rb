@@ -53,6 +53,12 @@ module FundAmerica
         API::request(:get, "investments/#{investment_id}/investment_payments")
       end
 
+      # End point: https://apps.fundamerica.com/api/investments/:id/crypto_wallets (GET)
+      # Usage: FundAmerica::Investment.crypto_wallets(investment_id)
+      # Output: Returns crypto wallets of an investment with matching id
+      def crypto_wallets(investment_id)
+        API::request(:get, "investments/#{investment_id}/crypto_wallets")
+      end
     end
   end
 end
