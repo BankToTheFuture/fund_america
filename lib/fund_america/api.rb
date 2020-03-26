@@ -13,8 +13,6 @@ module FundAmerica
         raise_wrong_status_error unless success_response
 
         parsed_response
-      rescue JSON::ParserError
-        nil
       rescue StandardError => e
         raise FundAmerica::Error.new(e, 503)
       end
