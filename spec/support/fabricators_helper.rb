@@ -51,6 +51,25 @@ module FabricatorsHelper
     }
   end
 
+  def ach_authorization_params
+    {
+      account_number: '0000123456789',
+      account_type: 'checking',
+      address: '555 Somewhere in Manhattan',
+      check_type: 'personal',
+      city: 'New York',
+      email: 'john.investor@example.com',
+      entity_id: 'Ar9FLNbPRcegQsgX0YgIKg',
+      ip_address: '127.0.0.1',
+      literal: 'John Q Investor',
+      name_on_account: 'John Q Investor',
+      routing_number: '122287251',
+      state: 'NY',
+      user_agent: 'No Name Browser 1.0',
+      zip_code: '10004'
+    }
+  end
+
   def current_time
     @current_time ||= Time.now.to_i
   end
