@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.fundamerica.com/api/ach_authorizations
+    body:
+      encoding: UTF-8
+      string: account_number=0000123456789&account_type=checking&address=555%20Somewhere%20in%20Manhattan&check_type=personal&city=New%20York&email=john.investor%40example.com&entity_id=Ar9FLNbPRcegQsgX0YgIKg&ip_address=127.0.0.1&literal=John%20Q%20Investor&name_on_account=John%20Q%20Investor&routing_number=122287251&state=NY&user_agent=No%20Name%20Browser%201.0&zip_code=10004
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TGJNMi1JMGRnZ01kRVA1RXRNSzFOczJrc3F4T2tDZlY6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 08 Apr 2020 22:16:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Access-Control-Expose-Headers:
+      - Cache-Control, Content-Disposition, Content-Type, X-FA-Session-Expires-At
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Max-Age:
+      - '86400'
+      X-Request-Id:
+      - 8299c507-762c-4db7-8ecf-61b170d71835
+      Access-Control-Allow-Headers:
+      - Content-Disposition, Content-Type, X-FA-Public-Key, X-FA-User-Session-Token,
+        X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Etag:
+      - W/"a87d90f68799c59b0dca6125bd925f0b"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.056012'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"ach_authorization","id":"0rz_cAUsSgmYwAYDqyCzvw","url":"https://sandbox.fundamerica.com/api/ach_authorizations/0rz_cAUsSgmYwAYDqyCzvw","account_number_short":"6789","agreement_html":"\u003cp\u003e\u003cstrong\u003eIMPORTANT:
+        Please read before completing, signing and submitting.\u003c/strong\u003e\u003c/p\u003e\n\n\u003cp\u003eDirect
+        Payment via ACH is a transfer of funds from (or to) a bank account for the
+        purposes of making a payment.\u003c/p\u003e\n\n\u003cp\u003eI (we) hereby
+        authorize the escrow agent (\u0026ldquo;Escrow Agent\u0026rdquo;), to electronically
+        initiate credit and debit entries to my (our) account at the financial institution
+        listed below (hereinafter \u0026ldquo;Bank\u0026rdquo;), and, if necessary,
+        initiate adjustments for any transactions credited/debited in error.\u003c/p\u003e\n\n\u003cp\u003eThis
+        authority authorizes the Escrow Agent to credit my (our) account to correct
+        errors and with payments, refunds, reimbursements, and other funds, and to
+        debit my (our) account for the investments I make, and will remain in effect
+        until such time that the Escrow Agent is notified by me (us) in writing to
+        revoke it, with such notice provided at support@primetrust.com at least 3
+        business days in advance. I (we) agree that the ACH transactions I (we) authorize
+        comply with all applicable law.\u003c/p\u003e\n\n\u003cp\u003eFirst transaction
+        will occur on or after %%TODAY%%.\u003c/p\u003e","bank_transfer_method_url":"https://sandbox.fundamerica.com/api/bank_transfer_methods/JAqWfjjDS1GtElgbAhVfsQ","cancelled_at":null,"created_at":"2020-04-08T22:16:56.716Z","entity_url":"https://sandbox.fundamerica.com/api/entities/Ar9FLNbPRcegQsgX0YgIKg","name":"John
+        Q Investor (0000123456789)","name_on_account":"John Q Investor","routing_number":"122287251","updated_at":"2020-04-08T22:16:56.716Z","verified":false}'
+    http_version: 
+  recorded_at: Wed, 08 Apr 2020 22:16:56 GMT
+recorded_with: VCR 4.0.0
