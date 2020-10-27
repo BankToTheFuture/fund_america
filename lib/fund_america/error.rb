@@ -12,16 +12,16 @@ module FundAmerica
     # Method to return error message based on the response code
     def self.error_message(code, parsed_response)
       case code
-      when 401 then
+      when 401
         'Authentication error. Your API key is incorrect'
-      when 403 then
+      when 403
         "Not authorized. You don't have permission to take action on a particular resource. It may not be owned by your account or it may be in a state where you action cannot be taken (such as attempting to cancel an invested investment)"
-      when 404 then
+      when 404
         'Resource was not found'
-      when 422 then
+      when 422
         "This usually means you are missing or have supplied invalid parameters for a request: #{parsed_response}"
-      when 500 then
-        "Internal server error. Something went wrong. This is a bug. Please report it to support immediately"
+      when 500
+        "Internal server error. Please check parsed_response for details: #{parsed_response}"
       else
         "An error occured. Please check parsed_response for details: #{parsed_response}"
       end
