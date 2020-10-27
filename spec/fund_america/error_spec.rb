@@ -7,8 +7,8 @@ describe FundAmerica::Error do
       @message_403 = "Not authorized. You don't have permission to take action on a particular resource. It may not be owned by your account or it may be in a state where you action cannot be taken (such as attempting to cancel an invested investment)"
       @message_404 = 'Resource was not found'
       @message_422 = 'This usually means you are missing or have supplied invalid parameters for a request: {}'
-      @message_500 = "Internal server error. Something went wrong. This is a bug. Please report it to support immediately"
-      @message_other = "An error occured. Please check parsed_response for details: {}"
+      @message_500 = 'Internal server error.'
+      @message_other = 'An error occured. Please check parsed_response for details: {}'
     end
 
     it 'must have an error message' do
@@ -78,7 +78,7 @@ describe FundAmerica::Error do
       end
 
       it 'must match 500 error message when code is 500' do
-        expect(@response).to eq(@message_500)
+        expect(@response).to include(@message_500)
       end
 
       it 'must not match other error message when code is 500' do
