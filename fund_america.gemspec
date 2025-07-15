@@ -39,6 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'csv'
   spec.add_runtime_dependency 'httparty'
   spec.add_runtime_dependency 'json'
+
   # Ruby Dependency
   spec.required_ruby_version = '>= 2.5'
 end
